@@ -1,152 +1,20 @@
-    1  apt update
-    2  apt upgrade
-    3  su israel
-    4  nano /etc/apt/sources.list
-    5  nano /etc/host
-    6  clear
-    7  nano /etc/hosts
-    8  nano /etc/hostname 
-    9  nano /etc/hosts
-   10  clear
-   11  apt install slapd ldap-utils ldapscripts
-   12  clear
-   13  slapcart
-   14  slapcat
-   15  nano /etc/hosts
-   16  apt purge slapd ldap-utils ldapscripts
-   17  reboot
-   18  ip -c addr show
-   19  ip -c add 
-   20  apt install slapd ldap-utils ldapscripts
-   21  slapcat
-   22  nano /etc/ldap/ldap.conf 
-   23  nano /etc/ldap/
-   24  apt purge slapd ldap-utils ldapscripts
-   25  rm -rf /etc/ldap
-   26  apt install slapd ldap-utils ldapscripts
-   27  slapcat
-   28  apt reconfigure slapd 
-   29  apt -reconfigure slapd 
+   11  apt install slapd ldap-utils ldapscripts ##lo que necesita ser instalado
+   
+   
+   14  slapcat #verificar que se ha creado el directorio
+   
+   24  apt purge slapd ldap-utils ldapscripts # por si la has jodido
+   25  rm -rf /etc/ldap #quita lo anterior
    30  dpkg-reconfigure  slapd
-   31  slapcat 
-   32  nano mandalorianos.ldif
-   33  cat mandalorianos.ldif 
-   34  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalorianos.ldif 
-   35  slapcat
-   36  clear
-   37  nano mandalore.ldif
-   38  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalore.ldif 
-   39  nano mandalore.ldif
-   40  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalore.ldif 
-   41  nano mandalore.ldif
-   42  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalore.ldif 
-   43  nano mandalore.ldif
-   44  cat mandalorianos.ldif 
-   45  nano mandalorianos.ldif 
-   46  nano mandalorianos.ldif 
-   47  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalorianos.ldif 
-   48  nano mandalore.ldif
-   49  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalore.ldif 
-   50  nano mandalore.ldif
-   51  ldapsearch
-   52  ldapsearch -x -LLL -b dc=malakor,dc=sith 
-   53  ldapsearch -x -LLL -b ou,tecnicos,dc=malakor,dc=sith 
-   54  ldapsearch -x -LLL -b ou=tecnicos,dc=malakor,dc=sith 
-   55  clear
-   56  ldapsearch -x -LLL -b ou=tecnicos,dc=malakor,dc=sith 
-   57  ldapsearch -x -LLL -b ou=guerreros,dc=malakor,dc=sith 
-   58  ldapvi
-   59  apt install ldapvi
-   60  ldapvi
-   61  ldapvi --help
-   62  ldapvi uid=guerrero1,ou=guerreros,dc=malakor,dc=sith
-   63  ldapvi --discover uid=guerrero1,ou=guerreros,dc=malakor,dc=sith
-   64  slapcat
-   65  clear
-   66  nano modificaApellido.ldif
-   67  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W 
-   68  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W -name
-   69  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W 
-   70  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W  dn=gecos
-   71  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W  replace: surname
-   72  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W -  
-   73  ldapmodify -v -D 'guerrero1,ou=guerreros,dc=malakor,dc=sith' -W -
-   74  ldapmodify -v -D 'uid=guerrero1,ou=guerreros,dc=malakor,dc=sith' -W -  
-   75  ldapmodify -v -D 'uid=guerrero1,ou=guerreros,dc=malakor,dc=sith' -W 
-   76  ldapmodify -v -D 'uid=guerrero1,ou=guerreros,dc=malakor,dc=sith' -W 
-   77  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   78  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   79  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   80  slapcat
-   81  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   82  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   83  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   84  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   85  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   86  slapcat
-   87  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   88  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   89  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W 
-   90  slapcat
-   91  ldapdeleteuser --help
-   92  ldapdelete -v 'uid=tecnico1,ou=tecnicos,dc=malakor,dc=sith' -D 'cn=admin,dc=malakor,dc=sith' -W
-   93  ip -c add 
-   94  clear
-   95  apt install cups
-   96  slapcat
-   97  apt install vncserver
-   98  apt install tightvncserver
-   99  tightvnc
-  100  tightvncserver 
-  101  ip -c a
-  102  ls
-  103  clear
-  104  nano modificarou.ldif
-  105  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f modificarou.ldif 
-  106  slapcat
-  107  nano modificarou.ldif
-  108  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f modificarou.ldif 
-  109  nano modificarou.ldif
-  110  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f modificarou.ldif 
-  111  nano modificarou.ldif
-  112  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f modificarou.ldif 
-  113  slapcat
-  114  cat modificarou.ldif 
-  115  mkdir desdegit
-  116  cd desdegit/
-  117  apt git install
-  118  apt install git
-  119  git clone https://github.com/israel05/EjemplosLDIF
-  120  ls
-  121  cd EjemplosLDIF/
-  122  mkdir LDIFS
-  123  cd LDIFS/
-  124  apt install mc
-  125  mc
-  126  ls
-  127  cd..
-  128  cd ..
-  129  ls
-  130  cd SERVIDOR/
-  131  ls
-  132* slp
-  133  slapcat >> salidaSlapcat.txt
-  134  cat salidaSlapcat
-  135  cat salidaSlapcat.txt 
-  136  cd ..
-  137  ls
-  138  cd ..
-  139  ls
-  140  cd EjemplosLDIF/
-  141  ls
-  142  git add .
-  143  git commit -m "parte del server"
-  144  git config --global --edit
-  145  git commit --amend --reset-author
-  146  git commit -m "parte del server2"
-  147  git status
-  148  git push
-  149  git pull
-  150  ls
-  151  history
-  152  history >> historialDeComandos.txt
+   
+   
+   32  nano mandalorianos.ldif #edito el LDIF
+   34  ldapadd -x -D cn=admin,dc=malakor,dc=sith -W -f mandalorianos.ldif  #añado la entrada
+   35  slapcat #verifico que se ha añadido
+      
+   53  ldapsearch -x -LLL -b ou,tecnicos,dc=malakor,dc=sith  #buscar la OU tecnicos
+          
+   79  ldapmodify -v -D cn=admin,dc=malakor,dc=sith -W  #modifica linea a linea una entrada
+   
+   92  ldapdelete -v 'uid=tecnico1,ou=tecnicos,dc=malakor,dc=sith' -D 'cn=admin,dc=malakor,dc=sith' -W #borra una entrada
+   

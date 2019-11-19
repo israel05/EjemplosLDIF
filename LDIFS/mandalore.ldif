@@ -1,0 +1,15 @@
+dn: uid=tecnico1,ou=tecnicos,dc=malakor,dc=sith
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: tecnico1
+sn: t1
+uid: tecnico1
+uidNumber: 4001
+gidNumber: 4001
+userPassword: tecnico1
+homeDirectory: /home/tecnico1
+loginShell: /bin/bash
+gecos: tecnicos
+description: tecnico uni
+

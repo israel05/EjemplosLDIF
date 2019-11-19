@@ -1,0 +1,5 @@
+dn: ou=tecnicos,dc=malakor,dc=sith
+objectClass: organizationalUnit
+ou: tecnicos
+
+

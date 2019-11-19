@@ -1,0 +1,157 @@
+dn: dc=home
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: home
+dc: home
+structuralObjectClass: organization
+entryUUID: 53053a54-9f3b-1039-833c-73f677670480
+creatorsName: cn=admin,dc=home
+createTimestamp: 20191119171109Z
+entryCSN: 20191119171109.224547Z#000000#000#000000
+modifiersName: cn=admin,dc=home
+modifyTimestamp: 20191119171109Z
+
+dn: cn=admin,dc=home
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e1NTSEF9RTZmZFM0aHV3L2hJQkIzeUhQTUJiNWNiL3NaZitNMDU=
+structuralObjectClass: organizationalRole
+entryUUID: 53057a6e-9f3b-1039-833d-73f677670480
+creatorsName: cn=admin,dc=home
+createTimestamp: 20191119171109Z
+entryCSN: 20191119171109.226216Z#000000#000#000000
+modifiersName: cn=admin,dc=home
+modifyTimestamp: 20191119171109Z
+
+dn: dc=malakor,dc=sith
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: malakor.sith
+dc: malakor
+structuralObjectClass: organization
+entryUUID: 982601c2-9f3b-1039-88d0-895d81cc11d4
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119171305Z
+entryCSN: 20191119171305.202165Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119171305Z
+
+dn: cn=admin,dc=malakor,dc=sith
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e1NTSEF9QzZkcFZiSnhyb0ZLMENhbWRSdEd0d050N1BtSlJuMDU=
+structuralObjectClass: organizationalRole
+entryUUID: 982953ea-9f3b-1039-88d1-895d81cc11d4
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119171305Z
+entryCSN: 20191119171305.223948Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119171305Z
+
+dn: ou=guerreros,dc=malakor,dc=sith
+objectClass: organizationalUnit
+ou: guerreros
+structuralObjectClass: organizationalUnit
+entryUUID: 2c9b0262-9f3c-1039-84dc-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119171714Z
+entryCSN: 20191119171714.271757Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119171714Z
+
+dn: ou=mecanicos,dc=malakor,dc=sith
+objectClass: organizationalUnit
+ou: mecanicos
+structuralObjectClass: organizationalUnit
+entryUUID: 2c9c63fa-9f3c-1039-84dd-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119171714Z
+entryCSN: 20191119171714.280821Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119171714Z
+
+dn: uid=guerrero1,ou=guerreros,dc=malakor,dc=sith
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: guerrero1
+sn: g1
+sn: DeLamo
+uid: guerrero1
+uidNumber: 3001
+gidNumber: 3001
+userPassword:: Z3VlcnJlcm8x
+homeDirectory: /home/guerrero1
+loginShell: /bin/bash
+gecos: guerreros
+description: Guerrero uno
+structuralObjectClass: inetOrgPerson
+entryUUID: ca474fd4-9f3c-1039-84de-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119172138Z
+entryCSN: 20191119174411.915907Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119174411Z
+
+dn: uid=guerrero2,ou=tecnicos,dc=malakor,dc=sith
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: guerrero2
+sn: g2
+uid: guerrero2
+uidNumber: 3002
+gidNumber: 3002
+userPassword:: Z3VlcnJlcm8y
+homeDirectory: /home/guerrero2
+loginShell: /bin/bash
+gecos: guerreros
+description: Guerrero dos
+structuralObjectClass: inetOrgPerson
+entryUUID: f14d29a0-9f3c-1039-84df-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119172244Z
+ou: tecnicos
+entryCSN: 20191119184847.381766Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119184847Z
+
+dn: uid=guerrero3,ou=guerreros,dc=malakor,dc=sith
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: guerrero3
+sn: g3
+uid: guerrero3
+uidNumber: 3003
+gidNumber: 3003
+userPassword:: Z3VlcnJlcm8z
+homeDirectory: /home/guerrero3
+loginShell: /bin/bash
+gecos: guerreros
+description: Guerrero tres
+structuralObjectClass: inetOrgPerson
+entryUUID: 0049122a-9f3d-1039-84e0-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119172309Z
+entryCSN: 20191119172309.411758Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119172309Z
+
+dn: ou=tecnicos,dc=malakor,dc=sith
+objectClass: organizationalUnit
+ou: tecnicos
+structuralObjectClass: organizationalUnit
+entryUUID: 24f13fe4-9f3d-1039-84e1-8318c225f7bb
+creatorsName: cn=admin,dc=malakor,dc=sith
+createTimestamp: 20191119172410Z
+entryCSN: 20191119172410.911911Z#000000#000#000000
+modifiersName: cn=admin,dc=malakor,dc=sith
+modifyTimestamp: 20191119172410Z
+

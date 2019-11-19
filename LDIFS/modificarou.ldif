@@ -1,0 +1,6 @@
+dn: uid=guerrero2,ou=guerreros,dc=malakor,dc=sith
+changetype: modrdn
+newrdn: uid=guerrero2
+deleteoldrdn: 0
+newsuperior: ou=tecnicos,dc=malakor,dc=sith
+
